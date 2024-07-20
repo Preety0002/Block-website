@@ -1,0 +1,26 @@
+<%- include("./partials/header")%>
+<%- include("./partials/nav")%>
+
+<style>
+    .continer {
+    background-color: #f3f4f6; /* Gray background color */
+    margin-top: 50px; /* Margin top of 10px */
+    padding: 20px; /* Optional: Add padding to space the content */
+}
+
+</style>
+
+<div class="continer h-[80%] w-full max-sm:w-96  flex items-center justify-center">
+    <form class="w-1/2 max-sm:w-[] flex flex-col gap-3" action="/users/register" method="post" >
+        <h1 class="text-2xl font-semibold">Register Page</h1>
+        <input class="w-full rounded-md" type="text" name="username" placeholder="Username">
+        <input class="w-full rounded-md" type="text" name="fullname" placeholder="Full Name">
+        <input class="w-full rounded-md" type="email" name="email" placeholder="Email">
+        <input class="w-full rounded-md" type="password" name="password" placeholder="Password">
+        <button class="w-max bg-blue-500 text-white px-4 py-2 rounded-md">Register</button>
+    </form>
+</div>
+
+
+
+<%- include("./partials/footer")%>
